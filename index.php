@@ -1,3 +1,13 @@
+<?php
+require_once('database.php');
+
+// Get Missions
+$queryMissions = 'SELECT * FROM missions';
+$statement = $db->prepare($queryMissions);
+$statement->execute();
+$missions = $statement->fetchAll();
+$statement->closeCursor();
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -27,7 +37,7 @@
           <span class="d-flex">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="page-1.html">Page 1</a>
+                <a class="nav-link" aria-current="page" href="contact-form.html">Contact Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="page-2.html">Page 2</a>
@@ -43,11 +53,40 @@
 
 <main class="container">
   <div class="starter-template text-center">
-    <h1>Bootstrap starter template</h1>
+    <h1>Matt's NASA Database</h1>
     <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+    
+    <h1>Missions List</h1>
+    <section>
+        <!-- display a table of NASA Missions -->
+        <table>
+            <tr>
+                <th>Mission Program</th>
+                <th>Mission Name</th>
+                <th>Mission Type</th>
+                <th>Delete</th>
+            </tr>
+
+            <?php foreach ($missions as $mission) : ?>
+            <tr>
+                <td><?php echo $mission['program_name']; ?></td>
+                <td><?php echo $mission['mission_name']; ?></td>
+                <td class="right"><?php echo $mission['mission_type']; ?></td>
+                <td><form action="delete_mission.php" method="post">
+                    <input type="hidden" name="mission_id"
+                           value="<?php echo $mission['mission_id']; ?>">
+                    <input type="submit" value="Delete">
+                </form></td>
+            </tr>
+            <?php endforeach; ?>
+        </table>
+    </section>
   </div>
 
 </main><!-- /.container -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <footer>
+    <p>&copy; <?php echo date("Y"); ?> Product Manager, Inc.</p>
+</footer>
   </body>
 </html>
