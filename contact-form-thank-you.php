@@ -1,4 +1,3 @@
-<!DOCTYPE HTML> 
 <html>
 <head>
 	<title>Thank you!</title>

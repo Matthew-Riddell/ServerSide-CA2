@@ -4,7 +4,10 @@
 <!-- the head section -->
 <head>
     <title>Product Manager</title>
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="mystyle.css" rel="stylesheet">
 </head>
 
 <!-- the body section -->
