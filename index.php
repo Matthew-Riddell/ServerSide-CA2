@@ -23,8 +23,8 @@ $statement->closeCursor();
     <link href="mystyle.css" rel="stylesheet">
   </head>
   <body>
-    
-	<?php include('nav.html'); ?>
+    <!-- nav bar file -->
+	<?php include('nav.php'); ?>
 
 <main class="container">
   <div class="starter-template text-center">

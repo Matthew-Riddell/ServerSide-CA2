@@ -3,6 +3,10 @@
 <head>
 	<title>Contact us</title>
 <!-- define some style elements-->
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="mystyle.css" rel="stylesheet">
 <style>
 h1
 {
@@ -15,11 +19,12 @@ label,a
 	font-family : Arial, Helvetica, sans-serif;
 	font-size : 12px; 
 }
-
 </style>	
 </head>	
 </head>
 <body>
+<!-- nav bar file -->
+	<?php include('nav.php'); ?>
 <h1>Contact us</h1>
 <form method="POST" name="contactform" action="contact-form-handler.php"> 
 <p>
