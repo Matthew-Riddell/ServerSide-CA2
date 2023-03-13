@@ -60,7 +60,7 @@ $statement->closeCursor();
                 <?php endforeach; ?>
             </tbody>
         </table>
-    </section>
+    </section><br><br><br>
   </div>
 </main><!-- /.container -->
     <script src="js/bootstrap.bundle.min.js"></script>
