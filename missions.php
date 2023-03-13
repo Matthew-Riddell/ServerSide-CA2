@@ -16,7 +16,8 @@ $statement->closeCursor();
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.80.0">
-    <title>Starter Template · Bootstrap v5.0</title>
+    <link rel="icon" href="images/favicon.png" />
+    <title>NASA Missions</title>
     <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->

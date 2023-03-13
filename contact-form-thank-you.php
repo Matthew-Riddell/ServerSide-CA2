@@ -6,6 +6,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="mystyle.css" rel="stylesheet">
+	<link rel="icon" href="images/favicon.png" />
 <style>
 h1
 {
