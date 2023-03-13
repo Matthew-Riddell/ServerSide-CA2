@@ -87,5 +87,7 @@ function validateForm() {
                     <input type="submit" value="Submit" class="btn btn-primary btn-block">
     </form>
 <script src="path/to/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- footer file -->
+<?php include('footer.php'); ?>
 </body>
 </html>

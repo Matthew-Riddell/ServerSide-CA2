@@ -1,13 +1,3 @@
-<?php
-require_once('database.php');
-
-// Get Missions
-$queryMissions = 'SELECT * FROM missions';
-$statement = $db->prepare($queryMissions);
-$statement->execute();
-$missions = $statement->fetchAll();
-$statement->closeCursor();
-?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -34,8 +24,7 @@ $statement->closeCursor();
     </div>
   </main><!-- /.container -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <footer>
-    <p>&copy; <?php echo date("Y"); ?> Matthew Riddell, D00245674</p>
-</footer>
+    <!-- footer file -->
+	<?php include('footer.php'); ?>
   </body>
 </html>

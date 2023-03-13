@@ -63,8 +63,7 @@ $statement->closeCursor();
   </div>
 </main><!-- /.container -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <footer>
-    <p>&copy; <?php echo date("Y"); ?> Matthew Riddell, D00245674</p>
-</footer>
+    <!-- footer file -->
+	<?php include('footer.php'); ?>
   </body>
 </html>
