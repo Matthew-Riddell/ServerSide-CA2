@@ -15,13 +15,15 @@ PRIMARY KEY (program_name));
 
 -- Missions Table
 CREATE TABLE missions ( mission_id CHAR(20) NOT NULL,
-program_name CHAR(20),
-mission_name VARCHAR(30),
-mission_type VARCHAR(50),
-mission_crew INT,
-mission_status VARCHAR(30),
-PRIMARY KEY (mission_id),
-FOREIGN KEY (program_name) REFERENCES programs(program_name));
+  program_name CHAR(20),
+  mission_name VARCHAR(30),
+  mission_type VARCHAR(50),
+  mission_crew INT,
+  mission_status VARCHAR(30),
+  image VARCHAR(255),
+  PRIMARY KEY (mission_id),
+  FOREIGN KEY (program_name) REFERENCES programs(program_name)
+);
 
 -- Inserting Table Data
 -- Programs Table
@@ -41,25 +43,25 @@ VALUES
 		
 -- Missions Table
 INSERT INTO
-		missions (mission_id, program_name, mission_name, mission_type, mission_crew, mission_status)
+		missions (mission_id, program_name, mission_name, mission_type, mission_crew, mission_status, image)
 VALUES
-		('1', 'Mercury', 'Mercury-Atlas 6', 'Test flight', 1, 'COMPLETE'),
-		('2', 'Mercury', 'Mercury-Atlas 7', 'Test flight', 1, 'COMPLETE'),
-		('3', 'Gemini', 'Gemini 6A', 'Orbital Rendezvous', 2, 'COMPLETE'),
-		('4', 'Gemini',	'Gemini 8',	'Docking test',	2,	'COMPLETE'),
-		('5', 'Apollo',	'Apollo 4',	'Uncrewed Earth orbital CSM flight', 0, 'COMPLETE'),
-		('6', 'Apollo',	'Apollo 5',	'Uncrewed Earth orbital LM flight', 0, 'COMPLETE'),
-		('7', 'Apollo',	'Apollo 6',	'Uncrewed Earth orbital CSM flight', 0, 'COMPLETE'),
-		('8', 'Apollo',	'Apollo 7',	'Crewed Earth orbital CSM flight', 3, 'COMPLETE'),
-		('9', 'Apollo',	'Apollo 8',	'Crewed lunar orbital CSM flight', 3, 'COMPLETE'),
-		('10', 'Apollo',	'Apollo 9',	'Crewed Earth orbital CSM/LM flight', 3, 'COMPLETE'),
-		('11', 'Apollo',	'Apollo 10', 'Crewed Earth orbital CSM/LM flight', 3, 'COMPLETE'),
-		('12', 'Apollo',	'Apollo 11', 'Crewed lunar landing', 3, 'COMPLETE'),
-		('13', 'Skylab', 'Skylab', 'Manned Space Station', 3, 'DEORBITED'),
-		('14', 'Mariner', 'Mariner 10', 'Planetary exploration', 0, 'DECOMMISSIONED'),
-		('15', 'Voyager', 'Voyager 1', 'Outer planetary exploration', 0, 'ONGOING'),
-		('16', 'Voyager', 'Voyager 2', 'Outer planetary exploration', 0,	'ONGOING'),
-		('17', 'Pioneer', 'Pioneer 11', 'Planetary exploration', 0,	'COMPLETE'),
-		('18', 'Viking', 'Viking 1', 'Martian planetary exploration', 0,	'COMPLETE'),
-		('19', 'Viking', 'Viking 2', 'Martian planetary exploration', 0,	'COMPLETE');
+		('1', 'Mercury', 'Mercury-Atlas 6', 'Test flight', 1, 'COMPLETE', 'images/mercury.png'),
+		('2', 'Mercury', 'Mercury-Atlas 7', 'Test flight', 1, 'COMPLETE', 'images/mercury.png'),
+		('3', 'Gemini', 'Gemini 6A', 'Orbital Rendezvous', 2, 'COMPLETE', 'images/gemini.png'),
+		('4', 'Gemini',	'Gemini 8',	'Docking test',	2,	'COMPLETE', 'images/gemini.png'),
+		('5', 'Apollo',	'Apollo 4',	'Uncrewed Earth orbital CSM flight', 0, 'COMPLETE', 'images/apollo.png'),
+		('6', 'Apollo',	'Apollo 5',	'Uncrewed Earth orbital LM flight', 0, 'COMPLETE', 'images/apollo.png'),
+		('7', 'Apollo',	'Apollo 6',	'Uncrewed Earth orbital CSM flight', 0, 'COMPLETE', 'images/apollo.png'),
+		('8', 'Apollo',	'Apollo 7',	'Crewed Earth orbital CSM flight', 3, 'COMPLETE', 'images/apollo7.png'),
+		('9', 'Apollo',	'Apollo 8',	'Crewed lunar orbital CSM flight', 3, 'COMPLETE', 'images/apollo8.png'),
+		('10', 'Apollo',	'Apollo 9',	'Crewed Earth orbital CSM/LM flight', 3, 'COMPLETE', 'images/apollo9.png'),
+		('11', 'Apollo',	'Apollo 10', 'Crewed Earth orbital CSM/LM flight', 3, 'COMPLETE', 'images/apollo10.png'),
+		('12', 'Apollo',	'Apollo 11', 'Crewed lunar landing', 3, 'COMPLETE', 'images/apollo11.png'),
+		('13', 'Skylab', 'Skylab', 'Manned Space Station', 3, 'DEORBITED', 'images/skylab.png'),
+		('14', 'Mariner', 'Mariner 10', 'Planetary exploration', 0, 'DECOMMISSIONED', 'images/mariner10.png'),
+		('15', 'Voyager', 'Voyager 1', 'Outer planetary exploration', 0, 'ONGOING', 'images/voyager.png'),
+		('16', 'Voyager', 'Voyager 2', 'Outer planetary exploration', 0,	'ONGOING', 'images/voyager.png'),
+		('17', 'Pioneer', 'Pioneer 11', 'Planetary exploration', 0,	'COMPLETE', 'images/pioneer11.png'),
+		('18', 'Viking', 'Viking 1', 'Martian planetary exploration', 0,	'COMPLETE', 'images/viking.png'),
+		('19', 'Viking', 'Viking 2', 'Martian planetary exploration', 0,	'COMPLETE', 'images/viking.png');
 		
