@@ -85,9 +85,9 @@ function validateForm() {
                         <label for='city'>City:</label><span class="required" id="city_required"></span>
                         <input type="text" name="city" required class="form-control">
                     </div><br>
-                    <input type="submit" value="Submit" class="btn btn-primary btn-block">
+                    <input type="submit" value="Submit" class="btn btn-primary btn-block"><br><br><br>
     </form>
-<script src="path/to/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 <!-- footer file -->
 <?php include('footer.php'); ?>
 </body>
