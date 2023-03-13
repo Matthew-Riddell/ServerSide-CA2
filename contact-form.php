@@ -86,21 +86,6 @@ function validateForm() {
                     </div><br>
                     <input type="submit" value="Submit" class="btn btn-primary btn-block">
     </form>
-
-<script language="JavaScript">
-var frmvalidator = new Validator("contactform");
-    frmvalidator.addValidation("name", "req", "Please provide your name");
-    frmvalidator.addValidation("email", "req", "Please provide your email");
-    frmvalidator.addValidation("email", "email", "Please enter a valid email address");
-    frmvalidator.addValidation("phone", "regexp=^[0-9]{3}-[0-9]{3}-[0-9]{4}$", "Please enter a valid phone number");
-    frmvalidator.addValidation("subject", "req", "Please provide a subject");
-    frmvalidator.addValidation("message", "req", "Please provide a message");
-    frmvalidator.addValidation("category", "dontselect=Please select a category", "Please select a category");
-	frmvalidator.addValidation("company", "req", "Please provide your company");
-	frmvalidator.addValidation("department", "req", "Please provide your department");
-	frmvalidator.addValidation("country", "req", "Please provide your country");
-	frmvalidator.addValidation("city", "req", "Please provide your city");
-</script>
-
+<script src="path/to/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
