@@ -21,7 +21,7 @@ $statement->closeCursor();
     <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="mystyle.css" rel="stylesheet">
+    <link href="mystyle.css?v=1" rel="stylesheet">
   </head>
   <body>
     <!-- nav bar file -->
@@ -42,7 +42,7 @@ $statement->closeCursor();
           <img class="card-img-top" src="<?php echo $mission['image']; ?>" alt="<?php echo $mission['mission_name']; ?>" height = "250px" width = "200px">
           <div class="card-body">
             <h5 class="card-title"><?php echo $mission['mission_name']; ?></h5>
-            <a href="#" class="btn btn-primary">Learn More</a>
+            <a href="mission.php?id=<?php echo $mission['mission_id']; ?>" class="btn btn-primary">Learn More</a>
           </div>
         </div>
       </div>

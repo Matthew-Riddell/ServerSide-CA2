@@ -5,7 +5,7 @@
 <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="mystyle.css" rel="stylesheet">
+    <link href="mystyle.css?v=1" rel="stylesheet">
     <link rel="icon" href="images/favicon.png" />	
 <script>
 function validateForm() {

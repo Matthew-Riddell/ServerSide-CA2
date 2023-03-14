@@ -21,7 +21,7 @@ $statement->closeCursor();
     <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="mystyle.css" rel="stylesheet">
+    <link href="mystyle.css?v=1" rel="stylesheet">
   </head>
   <body>
     <!-- nav bar file -->
