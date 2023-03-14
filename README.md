@@ -20,7 +20,7 @@ To run this website on your local machine, follow these steps:
 * Import the missions.sql file located in the database folder into phpMyAdmin.
 * Open a web browser and go to http://localhost/ServerSide-CA2/index.php.
 
-### Alternatively you can see the webpage here: https://mysql07.comp.dkit.ie/D00245674/CA2/index.php 
+Alternatively you can see the webpage here: https://mysql07.comp.dkit.ie/D00245674/CA2/index.php 
 
 ## Features
 * Display information about various NASA space missions.
