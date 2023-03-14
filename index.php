@@ -42,7 +42,7 @@ $statement->closeCursor();
           <img class="card-img-top" src="<?php echo $mission['image']; ?>" alt="<?php echo $mission['mission_name']; ?>" height = "250px" width = "200px">
           <div class="card-body">
             <h5 class="card-title"><?php echo $mission['mission_name']; ?></h5>
-            <a href="mission.php?id=<?php echo $mission['mission_id']; ?>" class="btn btn-primary">Learn More</a>
+            <a href="mission.php?id=<?php echo $mission['mission_id']; ?>" class="btn btn-primary">More Details</a>
           </div>
         </div>
       </div>

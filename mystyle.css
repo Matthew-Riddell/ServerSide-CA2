@@ -59,3 +59,32 @@ small {
     font-size: 12px;
 }
 
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .mission-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .mission-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #343a40;
+  }
+  
+  .mission-details {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #6c757d;
+  }
+  
+  .mission-description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #343a40;
+  }

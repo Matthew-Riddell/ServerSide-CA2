@@ -9,11 +9,14 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="missions.php">Missions</a>
+      <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="page-3.html">Rockets</a>
+          <a class="nav-link" aria-current="page" href="programs.php">Programs Table</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="missions.php">Missions Table</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="contact-form.php">Contact Us</a>

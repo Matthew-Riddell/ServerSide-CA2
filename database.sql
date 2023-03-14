@@ -3,7 +3,7 @@
 -- NASA Database for ServerSide CA2
 
 USE D00245674;
-DROP TABLE IF EXISTS programs, missions;
+DROP TABLE IF EXISTS missions, programs;
 
 -- Creating Tables
 -- Programs Table
@@ -11,6 +11,7 @@ CREATE TABLE programs ( program_name CHAR(20) NOT NULL,
 program_start_date DATE,
 program_end_date DATE,
 program_status VARCHAR(30),
+image VARCHAR(200),
 PRIMARY KEY (program_name));
 
 -- Missions Table
@@ -29,18 +30,18 @@ CREATE TABLE missions ( mission_id CHAR(20) NOT NULL,
 -- Inserting Table Data
 -- Programs Table
 INSERT INTO
-		programs (program_name, program_start_date, program_end_date, program_status)
+		programs (program_name, program_start_date, program_end_date, program_status, image)
 VALUES
-		('Mercury', '1958-10-07', '1963-05-15', 'COMPLETE'),
-		('Gemini', '1964-04-08', '1966-11-11', 'COMPLETE'),
-		('Apollo', '1961-10-27', '1972-12-19', 'COMPLETE'),
-		('Skylab', '1973-05-04', '1979-07-11', 'DEORBITED'),
-		('Voyager', '1977-08-20', NULL, 'ONGOING'),
-		('Mariner', '1962-07-22', '1975-03-24', 'COMPLETE'),
-		('Pioneer', '1958-08-17', '1978-08-08', 'COMPLETE'),
-		('Viking', '1975-08-20', '1975-09-09', 'COMPLETE'),
-		('Space Shuttle', '1977-08-12', '2011-07-21', 'RETIRED'),
-		('Vanguard', '1957-12-06', '1959-09-18', 'COMPLETE');
+		('Mercury', '1958-10-07', '1963-05-15', 'COMPLETE', 'images/mercury.png'),
+		('Gemini', '1964-04-08', '1966-11-11', 'COMPLETE', 'images/gemini.png'),
+		('Apollo', '1961-10-27', '1972-12-19', 'COMPLETE', 'images/apollo.png'),
+		('Skylab', '1973-05-04', '1979-07-11', 'DEORBITED', 'images/skylab.png'),
+		('Voyager', '1977-08-20', NULL, 'ONGOING', 'images/voyager.png'),
+		('Mariner', '1962-07-22', '1975-03-24', 'COMPLETE', 'images/mariner10.png'),
+		('Pioneer', '1958-08-17', '1978-08-08', 'COMPLETE', 'images/pioneer11.png'),
+		('Viking', '1975-08-20', '1975-09-09', 'COMPLETE', 'images/viking.png'),
+		('Space Shuttle', '1977-08-12', '2011-07-21', 'RETIRED', 'images/shuttle.png'),
+		('Vanguard', '1957-12-06', '1959-09-18', 'COMPLETE', 'images/vanguard.png');
 		
 -- Missions Table
 INSERT INTO

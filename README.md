@@ -23,6 +23,7 @@ To run this website on your local machine, follow these steps:
 Alternatively you can see the webpage here: https://mysql07.comp.dkit.ie/D00245674/CA2/index.php 
 
 ## Features
+* Display information about various NASA space programs and their associated missions.
 * Display information about various NASA space missions.
 * Users can submit a form to request more information about a specific mission.
 

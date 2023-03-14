@@ -1,13 +1,6 @@
 <?php
 require_once('database.php');
 
-// Get Missions
-$queryMissions = 'SELECT * FROM missions';
-$statement = $db->prepare($queryMissions);
-$statement->execute();
-$missions = $statement->fetchAll();
-$statement->closeCursor();
-
 // Get Programs
 $queryPrograms = 'SELECT * FROM programs';
 $statement = $db->prepare($queryPrograms);
@@ -24,7 +17,7 @@ $statement->closeCursor();
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.80.0">
     <link rel="icon" href="images/favicon.png" />
-    <title>NASA Missions</title>
+    <title>NASA Programs Table</title>
     <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
@@ -37,32 +30,26 @@ $statement->closeCursor();
   <main class="container">
   <div class="starter-template text-center">
     <h1>Matt's NASA Database</h1>
-    <p class="lead">The table contains a list of space missions with details such as mission name, program name, type, and status.</p>
-    <h1>Missions List</h1>
+    <p class="lead">The table contains a list of space programs with details such as program name, program launch date, status, and end date.</p>
+    <h1>Programs List</h1>
     <section>
-        <!-- display a table of NASA Missions -->
+        <!-- display a table of NASA programs -->
         <table class="table">
             <thead>
                 <tr>
-                    <th>Mission Program</th>
-                    <th>Mission Name</th>
-                    <th>Mission Type</th>
-                    <th>Delete</th>
+                    <th>Program Name</th>
+                    <th>Program Launch Date</th>
+                    <th>Program End Date</th>
+                    <th>Program Status</th>
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($missions as $mission) : ?>
+                <?php foreach ($programs as $program) : ?>
                 <tr>
-                    <td><a href="program.php?id=<?php echo $mission['program_name']; ?>"><?php echo $mission['program_name']; ?></a></td>
-                    <td><a href="mission.php?id=<?php echo $mission['mission_id']; ?>"><?php echo $mission['mission_name']; ?></a></td>
-                    <td><?php echo $mission['mission_type']; ?></td>
-                    <td>
-                        <form action="delete_mission.php" method="post">
-                            <input type="hidden" name="mission_id"
-                                value="<?php echo $mission['mission_id']; ?>">
-                            <button type="submit" class="btn btn-danger">Delete</button>
-                        </form>
-                    </td>
+                  <td><a href="program.php?id=<?php echo $program['program_name']; ?>"><?php echo $program['program_name']; ?></a></td>
+                  <td><?php echo $program['program_start_date']; ?></td>
+                  <td><?php echo $program['program_end_date']; ?></td>
+                  <td><?php echo $program['program_status']; ?></td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>
