@@ -33,4 +33,4 @@ Alternatively you can see the webpage here: https://mysql07.comp.dkit.ie/D002456
 * Enhance the user interface with more dynamic design features.
 
 ## Credits
-This website was created by Matthew Riddell D00245674 as part of a project for Dundalk Institute of Technology, Dundalk Co. Louth Ireland. Special thanks to Sebastian Gates for their guidance and support. The space mission data was sourced from NASA.
+This website was created by Matthew Riddell D00245674 as part of a project for Dundalk Institute of Technology, Dundalk Co. Louth Ireland. Special thanks to Sebastian Gates for his guidance and support. The space mission data was sourced from NASA.
