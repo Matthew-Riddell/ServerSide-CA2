@@ -1,22 +1,36 @@
-# ServerSide-CA2
-Assignment 2
-Server-Side Development
-Build a website using PHP & MySQL
-Objectives
-You have been asked to create a secure website with a contact form. The theme and style of the website is up to you to create, design and implement. Your application will need to connect to a MySQL database using a PDO connection and return data to the front-end of your website. Your website must also include a contact form that sends email and includes robust front-end form validation to cleanse the data entry from users.
-Deliverables
-A MySQL database that uses multiple data types.
-A PDO connection to your database in your application.
-A working contact form with validation.
-Project Timeline
-Develop an idea and wireframe/sketch for the project.
-Enhance the existing starter code provided for the assignment.
-Push project changes to GitHub while in development.
-FTP files to a remote host using an FTP client and setup remote DB. 
-Assessment Criteria 
-Your project will be assessed by the following criteria:
-Application of the Bootstrap framework (15%)
-Use of self applied PHP features (15%)
-Production of MySQL database and tables (15%)
-Creation of contact form fields and validation (30%)
-Use of Git versioning and FTP (25%)
+# Matt's NASA Database
+This website was created for my ServerSide Assignment.
+
+This website provides information about various space missions that have been conducted by the National Aeronautics and Space Administration NASA, including mission names, program names, mission types, mission crews, mission statuses, and descriptions.
+
+## Technologies Used
+* HTML
+* CSS
+* JavaScript
+* PHP
+* MySQL
+* Bootstrap
+
+## Setup
+To run this website on your local machine, follow these steps:
+
+* Download and install XAMPP.
+* Clone this repository into the htdocs folder in your XAMPP directory.
+* Start the Apache and MySQL modules in XAMPP.
+* Import the missions.sql file located in the database folder into phpMyAdmin.
+* Open a web browser and go to http://localhost/ServerSide-CA2/index.php.
+
+### Alternatively you can see the webpage here: https://mysql07.comp.dkit.ie/D00245674/CA2/index.php 
+
+## Features
+* Display information about various NASA space missions.
+* Users can submit a form to request more information about a specific mission.
+
+## Future Improvements
+* Add authentication for admin users to update or delete missions.
+* Improve form validation to ensure that all required fields are filled out before submission.
+* Implement a search function to allow users to search for specific missions.
+* Enhance the user interface with more dynamic design features.
+
+## Credits
+This website was created by Matthew Riddell D00245674 as part of a project for Dundalk Institute of Technology, Dundalk Co. Louth Ireland. Special thanks to Sebastian Gates for their guidance and support. The space mission data was sourced from NASA.

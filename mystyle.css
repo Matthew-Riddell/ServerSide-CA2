@@ -21,6 +21,10 @@ label,a {
     margin-left: 5px;
 }
 
+.required > span {
+    color:red;
+}
+
 .form-group {
     margin-bottom: 20px;
 }
@@ -54,6 +58,4 @@ input[type="submit"]:hover {
 small {
     font-size: 12px;
 }
-
-
 

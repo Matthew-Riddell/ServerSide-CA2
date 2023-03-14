@@ -6,26 +6,7 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="mystyle.css?v=1" rel="stylesheet">
-    <link rel="icon" href="images/favicon.png" />	
-<script>
-function validateForm() {
-  var name = document.forms["contactform"]["name"].value;
-  var email = document.forms["contactform"]["email"].value;
-  var message = document.forms["contactform"]["message"].value;
-  if (name == "") {
-    document.getElementById("name_required").innerHTML = "This field is required";
-    return false;
-  }
-  if (email == "") {
-    document.getElementById("email_required").innerHTML = "This field is required";
-    return false;
-  }
-  if (message == "") {
-    document.getElementById("message_required").innerHTML = "This field is required";
-    return false;
-  }
-}
-</script>		
+    <link rel="icon" href="images/favicon.png" />		
 </head>
 <body>
 <!-- nav bar file -->
@@ -34,7 +15,7 @@ function validateForm() {
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <h1 class="text-center mb-4">Contact us</h1>
-                <form method="POST" name="contactform" action="contact-form-handler.php" onsubmit="return validateForm()">
+                <form method="POST" name="contactform" action="contact-form-handler.php">
                     <div class="form-group">
                         <label for='name'>Your Name:</label><span class="required" id="name_required"></span>
                         <input type="text" name="name" required class="form-control">
@@ -85,9 +66,10 @@ function validateForm() {
                         <label for='city'>City:</label><span class="required" id="city_required"></span>
                         <input type="text" name="city" required class="form-control">
                     </div><br>
-                    <input type="submit" value="Submit" class="btn btn-primary btn-block"><br><br><br>
+                    <input type="submit" value="Submit" class="btn btn-primary btn-block" onclick="return validateForm()"><br><br><br>
     </form>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="validation.js"></script>
 <!-- footer file -->
 <?php include('footer.php'); ?>
 </body>

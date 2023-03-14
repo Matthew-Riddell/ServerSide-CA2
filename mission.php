@@ -1,6 +1,6 @@
 <?php 
     require_once('database.php');
-
+    // Get mission id from previous page
     $mission_id = $_GET['id'];
 
     // Prepare and execute the query to retrieve the mission with the given ID
@@ -15,13 +15,6 @@
     // Close the database connection
     $statement->closeCursor();
 ?>
-
-
-
-
-
-
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -40,7 +33,6 @@
   <body>
     <!-- nav bar file -->
 	<?php include('nav.php'); ?>
-
   <main class="container">
   <div class="starter-template text-center">
     <div class="container mt-5">
@@ -50,9 +42,11 @@
     </div>
     <div class="col-md-6">
       <h2><?php echo $mission['mission_name']; ?></h2>
+      <p><strong><?php echo $mission['program_name']; ?></strong></p>
+      <p><strong>Mission Type:</strong> <?php echo $mission['mission_type']; ?></p>
+      <p><strong>Mission Crew:</strong> <?php echo $mission['mission_crew']; ?></p>
+      <p><strong>Mission Status:</strong> <?php echo $mission['mission_status']; ?></p>
       <p><?php echo $mission['description']; ?></p>
-      <p><strong>Launch Date:</strong> <?php echo $mission['launch_date']; ?></p>
-      <p><strong>Mission Status:</strong> <?php echo $mission['status']; ?></p>
     </div>
   </div>
 </div><br><br><br>

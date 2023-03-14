@@ -41,6 +41,14 @@ $email_address))
     $errors .= "\n Error: Invalid email address";
 }
 
+if (!preg_match(
+    "/^\d{3}-?\d{3}-?\d{4}$/",
+    $phone))
+    {
+        $errors .= "\n Error: Invalid phone number";
+    }
+
+
 if( empty($errors))
 {
         $to = $myemail;
